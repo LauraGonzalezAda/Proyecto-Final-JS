@@ -1,0 +1,97 @@
+[
+    {
+      "id": 1, 
+      "nombre": "Camisa De Hombre", 
+      "precio": 75,
+      "img": "./images/p1.png",
+      "cantidad": 1
+    }, 
+  
+    {
+      "id": 2, 
+      "nombre": "Camisa De Hombre", 
+      "precio": 80,
+      "img":"./images/p2.png",
+      "cantidad": 1
+    },
+  
+    {
+      "id": 3, 
+      "nombre": "Vestido De Mujer", 
+      "precio": 68,
+      "img":"./images/p3.png",
+      "cantidad": 1
+    },
+  
+    {
+      "id": 4, 
+      "nombre": "Vestido De Mujer", 
+      "precio": 70,
+      "img":"./images/p4.png",
+      "cantidad": 1
+    },
+  
+    {
+      "id": 5, 
+      "nombre": "Vestido De Mujer", 
+      "precio": 75,
+      "img":"./images/p5.png",
+      "cantidad": 1
+    },
+  
+    {
+      "id": 6, 
+      "nombre": "Vestido De Mujer", 
+      "precio": 58,
+      "img":"./images/p6.png",
+      "cantidad": 1
+    },
+    {
+      "id": 7, 
+      "nombre": "Vestido De Mujer", 
+      "precio": 80,
+      "img":"./images/p7.png",
+      "cantidad": 1
+    },
+  
+    {
+      "id": 8, 
+      "nombre": "Camisa De Hombre", 
+      "precio": 65,
+      "img":"./images/p8.png",
+      "cantidad": 1
+    },
+  
+    {
+      "id": 9, 
+      "nombre": "Camisa De Hombre", 
+      "precio": 65,
+      "img":"./images/p9.png",
+      "cantidad": 1
+    },
+  
+    {
+      "id": 10, 
+      "nombre": "Camisa De Hombre", 
+      "precio": 65,
+      "img":"./images/p10.png",
+      "cantidad": 1
+    },
+  
+    {
+      "id": 11, 
+      "nombre": "Camisa De Hombre", 
+      "precio": 65,
+      "img": "./images/p11.png",
+      "cantidad": 1
+    },
+  
+    {
+      "id": 12, 
+      "nombre": "Vestido De Mujer", 
+      "precio": 65,
+      "img":"./images/p12.png",
+      "cantidad": 1
+    }
+  
+  ]
