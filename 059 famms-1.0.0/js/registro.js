@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let usuario = document.getElementById('form3Example1c').value;
     if(usuario.length < 5) {
       Toastify({
-        text: "El nombre de usuario no es valido",
+        text: "El nombre debe ser mayor a 5 caracteres",
         duration: 3000,
         newWindow: true,
         close: true,
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
       return;
     }
 
-    let email = document.getElementById('form3Example3c').value;
+    let email = document.getElementById('form3Example3c').value.toLowerCase();
     if (email.length < 6) {
         Toastify({
             text: "El mail no es valido",
@@ -46,11 +46,29 @@ document.addEventListener("DOMContentLoaded", function() {
           }).showToast();
       return;
     }
+    const validarEmail = registro.map(usuario => usuario.email);
+    const emailExistente = validarEmail.includes(email)
+    if (emailExistente) {
+      Toastify({
+          text: "El mail ya esta en uso",
+          duration: 3000,
+          newWindow: true,
+          close: true,
+          gravity: "top",
+          position: "tight",
+          stopOnFocus: true,
+          style: {
+            background: "linear-gradient(to right, #f7444e, #f3999d)",
+          },
+          onClick: function(){}
+        }).showToast();
+    return;
+  }
 
     let clave = document.getElementById('form3Example4c').value;
     if (clave.length < 6) {
         Toastify({
-            text: "La clave no es valida",
+            text: "La clave es demasiado corta",
             duration: 3000,
             newWindow: true,
             close: true,
@@ -83,8 +101,6 @@ document.addEventListener("DOMContentLoaded", function() {
         return;
       }
 
-
-
     this.submit();
     
     registro.push({usuario, email, clave, claveConfirm})
@@ -93,6 +109,7 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log(...registro);
     saveForm (registro);
 
+    
   }
 }
 

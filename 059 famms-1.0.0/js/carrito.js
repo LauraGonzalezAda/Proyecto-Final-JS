@@ -62,7 +62,10 @@
     const montoTotal = carrito.reduce((acc, productos)=> acc + productos.precio * productos.cantidad, 0)
 
     const totalCarritoFooter = document.createElement('div');
-    totalCarritoFooter.innerHTML= `Total de compra:$ ${montoTotal}`;
+    totalCarritoFooter.innerHTML= `
+    <h3>Total de compra:$ ${montoTotal}</h3>
+    <a class="botonComprarCarrito" href="./contact.html">Comprar</a>
+    `;
     totalCarritoFooter.className= 'totalCarritoFooter';
     seccionModalCarrito.appendChild(totalCarritoFooter)
   };
